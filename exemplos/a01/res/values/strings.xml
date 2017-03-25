@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">a01</string>
+    <string name="mensagem">Olá, seja bem-vindo! Neste aplicativo iremos
+    ilustrar como criar opções de menu, métodos para tratar as
+    seleções correspondentes e, por último, como "ligar" os métodos
+    criados com as opções!</string>
+    <string name="menu_configurar">Configurar</string>
+    <string name="menu_sair">Sair</string>
+    <string name="secondTextView">Segunda TextView</string>
+    <string name="thirdTextView">Terceira TextView</string>
+</resources>

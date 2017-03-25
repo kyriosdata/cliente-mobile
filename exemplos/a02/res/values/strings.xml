@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fluxo entre atividades</string>
+    <string name="Atividade2">Atividade 2</string>
+    <string name="Atividade3">Atividade 3</string>
+    <string name="fechar">Fechar</string>
+    <string name="principal_texto">Atividade principal</string>
+    <string name="segunda_texto">Segunda atividade</string>
+    <string name="terceira_texto">Terceira atividade</string>
+    <string name="sair">Sair</string>
+</resources>

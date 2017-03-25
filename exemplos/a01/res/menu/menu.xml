@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Options menu (todas as opções são aqui descritas) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Cada opção deve ser fornecido em elemento "item" próprio -->
+    <!-- @ é empregado para fazer referência a um resource -->
+    <!-- +id significa que o resource é um id e que, se não existir, crie-o -->
+    <!-- O id, neste caso é menu_configurar -->
+    <!-- Também é fornecido um título, neste caso, trata-se de uma
+         string, cujo identificador é menu_configurar. Onde está
+         definida esta sequência de caracteres? No arquivo
+         "strings.xml", no diretório res\values. -->
+    <item android:id="@+id/menu_configurar"
+          android:title="@string/menu_configurar" />
+
+    <item android:id="@+id/menu_sair"
+          android:title="@string/menu_sair" />
+</menu>

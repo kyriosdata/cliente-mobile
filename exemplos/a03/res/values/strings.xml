@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">a03</string>
+    <string name="bemvindo">Olá, seja bem-vindo!</string>
+    <string name="segundalinha">segunda linha</string>
+    <string name="terceiralinha">Três views em um único laiaute (LinearLayout). Todas instâncias
+    de TextView (esta última com letra maior). Observe que a anterior está alinhada (direita).
+    O padrão é esquerda, conforme a primeira opção. Também observe que há muito texto nesta
+    terceira linha. Isto exige que esta linha receba um peso (weight) maior.</string>
+    <string name="layout1">Leiaute 1</string>
+    <string name="b1">B1</string>
+    <string name="b2">Direita de B1</string>
+    <string name="b3">Baseado em B1</string>
+    <string name="layout2">Leiaute 2</string>
+    <string name="b01">01</string>
+    <string name="b00">00</string>
+    <string name="b02">02</string>
+    <string name="b03">03</string>
+    <string name="b04">04</string>
+    <string name="b11">11</string>
+    <string name="b10">10</string>
+    <string name="b12">12</string>
+    <string name="b13">13</string>
+    <string name="b14">14</string>
+    <string name="b21">21</string>
+    <string name="b20">20</string>
+    <string name="b22">22</string>
+    <string name="b23">23</string>
+    <string name="b24">24</string>
+    <string name="descricao">GridLayout de 8 linhas e 9 colunas. Observe o posicionamento dos botões nesta GridLayout, bem como deste texto.</string>
+</resources>
