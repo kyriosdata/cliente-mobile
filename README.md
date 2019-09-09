@@ -39,3 +39,41 @@ Identificadores únicos dos "supostos" requisitos agora não possuem relação c
 - R5 Localizar notícias por palavras (serviço de busca). Recebe requisições de busca por notícias. Cada requisição é uma sequência de uma ou mais palavras. Cada requisição deve ser persistida, juntamente com detalhes do "cliente" que faz a requisição, inclusive a localização. As notícias disponíveis e pertinentes à requisição são retornadas e a requisição é sinalizada para outro serviço. 
 
 - R6 Analisar requisições (serviço de análise). Recebe eventos sinalizados pelo serviço de busca. Para cada evento recebido é realizada a atualização dos dados indicando, por local, as palavras mais empregadas. 
+
+## Quarta revisão
+
+#### Requisitos funcionais
+
+- R1 Navegar por tópicos. Um tópico reúne várias notícias. Um tópico possui atributos como título, data e autor, dentre outros.
+
+- R2 Navegar por destaques (títulos) das notícias de um tópico. Uma notícia, à semelhança de um tópico, também possui atributos como título, data e autor, além, naturalmente, do corpo propriamente dito da notícia.
+
+- R3 Navegar por notícia. Cada notícia é texto com figuras. O usuário poderá ler todo o texto da notícia, assim como observar as possíveis figuras pertinentes. 
+
+- R4 Buscar por notícia. Uma ou mais palavras, o que é denominado de requisição, devem ser empregadas para localizar notícias cujo texto as incluem, independente do tópico. Se há acesso à internet, então busca é enviada para servidor, onde possivelmente outras notícias podem ser recuperadas. 
+
+- R5 Persistir requisição. Além das palavras que fazem parte da requisição devem ser armazenados, para cada requisição, a identificação do "cliente" e a localização (se possível).
+
+- R6 Enviar consultas. Consultas não enviadas para o servidor, em decorrência de ausência de acesso à internet, por exemplo, serão enviadas assim que houver disponibilidade de acesso. Neste caso, apenas o envio é submetido, sem que o resultado correspondente seja retornado. 
+
+- R7 Análise de requisições. Atualiza dados que permitem identificar as palavras mais empregadas por local (país) de origem da requisição.
+
+#### Restrições de projeto
+
+- R8 A busca por notícias deverá ser implementada por serviço próprio (serviço de busca). 
+
+- R9 O requisito R5 (Persistir requisição) deve ser implementado pelo Serviço de busca.
+
+- R10 Ao persistir uma requisição o Serviço de busca deve sinalizar um evento correspondente para o Serviço de análise.
+
+- R11 O requisito R7 (Análise de requisições) deve ser implementado pelo Serviço de análise, independentemente do Serviço de busca, possivelmente em execução em nó distinto de uma rede. 
+
+#### Internacionalização e localização
+
+- R8 O cliente pode fazer uso de várias línguas. Quando uma língua é alternada, os textos correspondentes a menus e outros elementos gráficos exibidos são trocados, além do conteúdo das notícias propriamente ditas. 
+
+#### Interfaces de software
+
+- R9 RESTFul API para acesso ao serviço de busca. 
+
+- R10 RESTFul API para acesso ao serviço de análise. 
