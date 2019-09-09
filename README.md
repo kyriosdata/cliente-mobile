@@ -8,3 +8,6 @@ administrativas.
 - R1 Criar cliente mobile.
 - R2 Criar _backend_ para interação com cliente. Cada requisição possivelmente gera um evento, e se for o caso, deve persisti-la antes de sinalizá-lo para o segundo _backend_.
 - R3 Criar um segundo _backend_ que recebe eventos do outro _backend_. 
+
+### Encaminhamento
+Ainda não está claro para mim. Requisitos devem ser identificados e refinados. É preciso analisar o que é esperado do software. Depois eu inicio o _design_. 
