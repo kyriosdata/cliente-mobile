@@ -23,3 +23,19 @@ administrativas.
 #### Encaminhamento
 
 > Ainda não temos requisitos, mas "desejos", contudo, mais claros que na revisão anterior. É preciso um pouco de análise para investigar melhor.
+
+## Terceira revisão
+Identificadores únicos dos "supostos" requisitos agora não possuem relação com os anteriores. Adicionalmente, agora os "supostos" requisitos estão classificados em requisitos funcionais e restrições de projeto.
+
+#### Requisitos funcionais
+
+- R1 Navegar por tópicos. Um tópico reúne várias notícias. Cada notícia é texto com figuras. Tópico e notícia possuem atributos que os classificam como título, data e autor, dentre outros.
+- R2 Buscar por notícia. Uma ou mais palavras devem ser empregadas para localizar notícias cujo texto as incluem, independente do tópico. Se há acesso à internet, então busca é enviada para servidor, onde possivelmente outras notícias podem ser recuperadas. Caso contrário, a consulta será salva para envio posterior.
+- R3 Navegar por notícia. O usuário poderá ler todo o texto da notícia, assim como observar as possíveis figuras pertinentes. 
+- R4 Enviar consultas. Consultas não enviadas para o servidor serão enviadas assim que houver disponibilidade de acesso à internet. Neste caso, apenas o envio é submetido, sem que o resultado correspondente seja retornado. 
+
+#### Restrições de projeto
+
+- R5 Localizar notícias por palavras (serviço de busca). Recebe requisições de busca por notícias. Cada requisição é uma sequência de uma ou mais palavras. Cada requisição deve ser persistida, juntamente com detalhes do "cliente" que faz a requisição, inclusive a localização. As notícias disponíveis e pertinentes à requisição são retornadas e a requisição é sinalizada para outro serviço. 
+
+- R6 Analisar requisições (serviço de análise). Recebe eventos sinalizados pelo serviço de busca. Para cada evento recebido é realizada a atualização dos dados indicando, por local, as palavras mais empregadas. 
