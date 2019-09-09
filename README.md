@@ -117,3 +117,23 @@ Identificadores únicos dos "supostos" requisitos agora não possuem relação c
 - R14 RESTFul API para acesso ao serviço de busca. Deve ser usado exclusivamente pelo dispositivo móvel.
 
 - R15 RESTFul API para acesso ao serviço de análise. Esta API será empregada por serviço administrativo (além do escopo do presente projeto).
+
+#### Modelagem de dados
+
+- Cada tópico está associado a várias notícias.
+- Cada notícia está associada a uma sequência de blocos.
+- Cada bloco é um parágrafo de texto ou uma imagem.
+- Tópico, notícia e bloco possuem o atributo língua. 
+- Apenas há associação entre tópico, notícia e bloco se possuem o mesmo valor para língua. 
+
+#### Mapa de diálogo
+
+- Ao abrir aplicativo móvel é exibida _splash screen_, que é exibida na língua empregada pela última vez pelo aplicativo. 
+- A _splash screen_ é automaticamente substituída pela tela inicial (Home). Esta tela lista os tópicos.
+- Tela Home (lista de tópicos). 
+- Usuário pode alternar para uma outra língua e a interface é alterada de acordo com a seleção feita.
+- Usuário seleciona um tópico e a lista de notícias pertinentes é exibida. 
+- Usuário seleciona uma notícia e o conteúdo correspondente é exibido. 
+- Usuário pode alternar para uma outra língua.
+- Usuário pode realizar busca por notícia e, neste caso, lista das notícias correspondentes é exibida. 
+- Usuário pode optar por ir para a Home (lista de tópicos). 
