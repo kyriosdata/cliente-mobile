@@ -92,13 +92,13 @@ Identificadores únicos dos "supostos" requisitos agora não possuem relação c
 
 - R5 Persistir requisição. Além das palavras que fazem parte da requisição devem ser armazenadas, para cada requisição, a identificação do "cliente" e a localização (se acesso ao GPS do dispositivo móvel for possível).
 
-- R6 Enviar consultas. Consultas não enviadas para o servidor, em decorrência de ausência de acesso à internet, por exemplo, serão enviadas assim que houver disponibilidade de acesso. Neste caso, apenas o envio é submetido, sem que o resultado correspondente seja retornado. 
+- R6 Enviar requisições. Consultas não enviadas para o servidor, em decorrência de ausência de acesso à internet, por exemplo, serão enviadas assim que houver disponibilidade de acesso. Neste caso, apenas o envio é submetido, sem que o resultado correspondente seja retornado. 
 
 - R7 Análise de requisições. Atualiza dados que permitem identificar as palavras mais empregadas por local (país) de origem da requisição.
 
 #### Restrições de projeto
 
-- R8 A busca por notícias deverá ser implementada por serviço próprio (serviço de busca). 
+- R8 A busca por notícias deverá ser implementada por serviço remoto (serviço de busca). 
 
 - R9 O requisito R5 (Persistir requisição) deve ser implementado pelo Serviço de busca.
 
@@ -106,12 +106,14 @@ Identificadores únicos dos "supostos" requisitos agora não possuem relação c
 
 - R11 O requisito R7 (Análise de requisições) deve ser implementado pelo Serviço de análise, independentemente do Serviço de busca, possivelmente em execução em nó distinto de uma rede. 
 
+- R12 O acesso ao Serviço de análise de dá por meio de evento sinalizado pelo Serviço de busca e por meio de RESTFul API (para acesso por serviço administrativo, além do escopo). 
+
 #### Internacionalização e localização
 
-- R8 O cliente pode fazer uso de várias línguas. Quando uma língua é alternada, os textos correspondentes a menus e outros elementos gráficos exibidos são trocados, além do conteúdo das notícias propriamente ditas. 
+- R13 Contemplar várias línguas (inicialmente inglês e português do Brasil). Quando uma língua é alternada, os textos correspondentes a menus e outros elementos gráficos exibidos são substituídos para refletir a língua selecionada além, naturalmente, do conteúdo propriamente dito das notícias e tópicos.
 
 #### Interfaces de software
 
-- R9 RESTFul API para acesso ao serviço de busca. 
+- R14 RESTFul API para acesso ao serviço de busca. Deve ser usado exclusivamente pelo dispositivo móvel.
 
-- R10 RESTFul API para acesso ao serviço de análise. 
+- R15 RESTFul API para acesso ao serviço de análise. Esta API será empregada por serviço administrativo (além do escopo do presente projeto).
