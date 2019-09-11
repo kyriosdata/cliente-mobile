@@ -45,6 +45,7 @@
 - Cada bloco é um parágrafo de texto ou uma imagem.
 - Tópico, notícia e bloco possuem o atributo língua. 
 - Apenas há associação entre tópico, notícia e bloco se possuem o mesmo valor para língua. 
+- Requisição = sequência de palavras (pelo menos uma) + localização (posição geográfica)(opcional) + identificação do cliente.
 
 #### Mapa de diálogo
 
