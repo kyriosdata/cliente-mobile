@@ -15,8 +15,13 @@ para cada requisição recebida, envia (evento correspondente) para o serviço d
 as requisições. Serviço de análise atualiza tabelas úteis para consultas a serem recebidas via RESTFul API de outros 
 serviços (fora do escopo do presente projeto).
 
+#### Para analisar, ...
+
+- Usar [Axon](https://axoniq.io/) como estratégia para todo o _backend_.
+- Usar Spring Boot com RabbitMQ ou estratégia similar para sinalizar eventos? ([aqui](https://reflectoring.io/event-messaging-with-spring-boot-and-rabbitmq/))
+
 ## Projeto detalhado do Serviço de Busca (SA)
 
-- MongoDB para armazenar requisições
+- MongoDB para armazenar requisições.
 
 
