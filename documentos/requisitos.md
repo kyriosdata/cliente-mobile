@@ -30,13 +30,17 @@
 
 #### Internacionalização e localização
 
-- R13 Contemplar várias línguas (inicialmente inglês e português do Brasil). Quando uma língua é alternada, os textos correspondentes a menus e outros elementos gráficos exibidos são substituídos para refletir a língua selecionada além, naturalmente, do conteúdo propriamente dito das notícias e tópicos.
+- R13 Alternar língua corrente. Quando uma língua é alternada, os textos correspondentes a menus e outros elementos gráficos exibidos são substituídos para refletir a língua selecionada além, naturalmente, do conteúdo propriamente dito dos tópicos e das notícias.
+
+- R14 Devem ser fornecidas, inicialmente, pelo menos duas línguas (Inglês e Português do Brasil).
+
+- R15 Armazenar a língua corrente. Quando há alternância da língua corrente, aquela selecionada é persistida no dispositivo de tal forma que, em início posterior, esta língua seja a padrão exibida ao usuário.
 
 #### Interfaces de software
 
-- R14 RESTFul API para acesso ao serviço de busca. Deve ser usado exclusivamente pelo dispositivo móvel.
+- R16 RESTFul API para acesso ao serviço de busca. Deve ser usado exclusivamente pelo dispositivo móvel.
 
-- R15 RESTFul API para acesso ao serviço de análise. Esta API será empregada por serviço administrativo (além do escopo do presente projeto).
+- R17 RESTFul API para acesso ao serviço de análise. Esta API será empregada por serviço administrativo (além do escopo do presente projeto).
 
 #### Modelagem de dados
 
