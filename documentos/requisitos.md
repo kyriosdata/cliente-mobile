@@ -1,4 +1,4 @@
-# Requisitos
+# Requisitos (Sistema de Notícias)
 
 #### Requisitos funcionais
 
