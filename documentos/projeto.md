@@ -3,17 +3,8 @@ O _design_ está dividido em projeto arquitetural e projeto detalhado.
 
 ## Projeto arquitetural
 
-A solução pressupõe: 
+![arquitetura](https://user-images.githubusercontent.com/1735792/65272064-cb591880-daf4-11e9-9e56-cb2dda143403.png)
 
-- Android app
-- iOS app
-- Serviço de busca
-- Serviço de análise
-
-FIGURA A SER CONSTRUÍDA: App (Android e iOS) comunica com serviço de busca (https) que, por sua vez, 
-para cada requisição recebida, envia (evento correspondente) para o serviço de análise. O serviço de busca persiste 
-as requisições. Serviço de análise atualiza tabelas úteis para consultas a serem recebidas via RESTFul API de outros 
-serviços (fora do escopo do presente projeto).
 
 #### Para analisar, ...
 
