@@ -23,3 +23,6 @@ Além de um App (mobile) o sistema de notícias inclui pelo menos dois component
 - Usuário pode realizar busca por notícia e, neste caso, lista das notícias correspondentes é exibida. 
 - Usuário pode optar por ir para a Home (lista de tópicos). 
 
+## Protótipos (validar funcionalidade)
+
+- Exibir tópicos ([aqui](https://snack.expo.io/@kyriosdata/topicos))
