@@ -9,8 +9,8 @@ class RequisicaoEventoTest {
     @Test
     void verificaSerializacaoCorreta() {
         Requisicao requisicao = new Requisicao("bom", "dia");
-        RequisicaoEvento requisicaoEvento = new RequisicaoEvento();
+        RequisicaoEvento requisicaoEvento = new RequisicaoEvento(requisicao);
         assertEquals("[\"bom\",\"dia\"]",
-                requisicaoEvento.conteudo(requisicao));
+                requisicaoEvento.conteudo());
     }
 }

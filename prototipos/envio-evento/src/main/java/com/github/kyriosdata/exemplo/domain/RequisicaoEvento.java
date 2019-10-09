@@ -2,10 +2,18 @@ package com.github.kyriosdata.exemplo.domain;
 
 import com.google.gson.Gson;
 
-public class RequisicaoEvento implements Evento<Requisicao> {
+import java.util.Objects;
+
+public class RequisicaoEvento implements Evento {
+
+    private Requisicao encapsulada;
+
+    RequisicaoEvento(Requisicao requisicao) {
+        encapsulada = Objects.requireNonNull(requisicao);
+    }
 
     @Override
-    public String conteudo(Requisicao requisicao) {
-        return new Gson().toJson(requisicao.getPalavras());
+    public String conteudo() {
+        return new Gson().toJson(encapsulada.getPalavras());
     }
 }

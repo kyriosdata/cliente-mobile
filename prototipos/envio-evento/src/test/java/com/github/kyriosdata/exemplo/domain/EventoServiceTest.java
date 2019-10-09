@@ -1,4 +1,13 @@
 package com.github.kyriosdata.exemplo.domain;
 
-public class EventoServiceTest {
+import org.junit.jupiter.api.Test;
+
+class EventoServiceTest {
+
+    @Test
+    void conteudoEnviado() {
+        Evento er = new RequisicaoEvento(new Requisicao("a", "b"));
+        EventoService es = new EventoService();
+        es.envia(er);
+    }
 }
