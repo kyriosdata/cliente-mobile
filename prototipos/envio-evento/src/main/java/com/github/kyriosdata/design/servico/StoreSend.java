@@ -1,6 +1,6 @@
 package com.github.kyriosdata.design.servico;
 
-public class StoreSend implements EnvioStrategy {
+class StoreSend implements EnvioStrategy {
     @Override
     public void destino(String destino) {
 
