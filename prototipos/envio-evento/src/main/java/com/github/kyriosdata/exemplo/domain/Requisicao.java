@@ -22,4 +22,8 @@ public class Requisicao{
 
         palavras = Collections.unmodifiableList(demaisEmLista);
     }
+
+    public List<String> getPalavras() {
+        return palavras;
+    }
 }
