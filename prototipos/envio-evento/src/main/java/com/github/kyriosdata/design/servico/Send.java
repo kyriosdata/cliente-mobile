@@ -7,7 +7,7 @@ public class Send implements EnvioStrategy {
     }
 
     @Override
-    public void envia(String conteudo) {
-        System.out.println("SEND");
+    public String envia(String conteudo) {
+        return "SEND: " + conteudo;
     }
 }

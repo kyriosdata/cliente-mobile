@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 
 public class EventoServiceFactory {
 
-    private final String PACKAGE = "com.github.kyriosdata.exemplo.domain.";
+    private final String PACKAGE = "com.github.kyriosdata.design.servico.";
     private final String SEND = PACKAGE + "Send";
     private final String STORE_AND_SEND = PACKAGE + "StoreSend";
 

@@ -16,6 +16,7 @@ public interface EnvioStrategy {
      * Envio do conteúdo para destino.
      *
      * @param conteudo Conteúdo a ser enviado.
+     * @return O conteúdo enviado.
      */
-    void envia(String conteudo);
+    String envia(String conteudo);
 }

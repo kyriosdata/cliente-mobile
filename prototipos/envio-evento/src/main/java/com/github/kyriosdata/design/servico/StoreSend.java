@@ -7,7 +7,7 @@ public class StoreSend implements EnvioStrategy {
     }
 
     @Override
-    public void envia(String conteudo) {
-        System.out.println("STORE THEN SEND");
+    public String envia(String conteudo) {
+        return "STORE AND FORWARD: " + conteudo;
     }
 }

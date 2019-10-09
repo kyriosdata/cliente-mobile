@@ -1,6 +1,8 @@
 package com.github.kyriosdata.design.servico;
 
+import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.function.BooleanSupplier;
 
 /**
  * Classe que implementa o envio de evento para micro-serviços registrados
@@ -14,14 +16,17 @@ public class EventoService {
     @Networking(disponivel = "não")
     private EnvioStrategy storeAndSend;
 
-    public String envia(final Evento evento) {
-        final String conteudo = evento.conteudo();
-        EnvioStrategy estrategia = internetDisponivel() ? send : storeAndSend;
-        estrategia.envia(conteudo);
-        return conteudo;
+    /**
+     * Serviço que verifica se há conexão com a internet.
+     */
+    private BooleanSupplier rede = () -> false;
+
+    void setFuncaoQueVerificaDisponibilidadeDeRede(BooleanSupplier servico) {
+        rede = Objects.requireNonNull(servico);
     }
 
-    private boolean internetDisponivel() {
-        return (ThreadLocalRandom.current().nextInt(10) & 1) == 1;
+    public String envia(final Evento evento) {
+        EnvioStrategy estrategia = rede.getAsBoolean() ? send : storeAndSend;
+        return estrategia.envia(evento.conteudo());
     }
 }
