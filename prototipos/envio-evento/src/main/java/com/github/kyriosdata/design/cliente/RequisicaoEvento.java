@@ -1,5 +1,6 @@
-package com.github.kyriosdata.design.servico;
+package com.github.kyriosdata.design.cliente;
 
+import com.github.kyriosdata.design.servico.Evento;
 import com.google.gson.Gson;
 
 import java.util.Objects;

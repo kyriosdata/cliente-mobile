@@ -1,4 +1,4 @@
-package com.github.kyriosdata.design.servico;
+package com.github.kyriosdata.design.cliente;
 
 import org.junit.jupiter.api.Test;
 

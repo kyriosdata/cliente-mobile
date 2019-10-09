@@ -1,5 +1,7 @@
 package com.github.kyriosdata.design.servico;
 
+import com.github.kyriosdata.design.cliente.Requisicao;
+import com.github.kyriosdata.design.cliente.RequisicaoEvento;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
