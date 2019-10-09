@@ -5,7 +5,7 @@ import com.google.gson.Gson;
 
 import java.util.Objects;
 
-public class RequisicaoEvento implements Evento {
+class RequisicaoEvento implements Evento {
 
     private Requisicao encapsulada;
 

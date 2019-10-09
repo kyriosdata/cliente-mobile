@@ -4,7 +4,7 @@ package com.github.kyriosdata.design.servico;
  * Envio de requisição. Objeto que implementa esta interface deve primeiro
  * receber o destino para o qual o conteúdo será enviado.
  */
-public interface EnvioStrategy {
+interface EnvioStrategy {
 
     /**
      * Define destino para envio de requisição
