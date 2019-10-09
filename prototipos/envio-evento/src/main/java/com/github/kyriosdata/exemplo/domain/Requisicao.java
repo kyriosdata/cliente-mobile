@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
  * Reúne uma ou mais palavras empregadas em uma busca.
  * As palavras são mantidas na ordem recebida.
  */
-public class Requisicao implements Evento {
+public class Requisicao{
 
     private List<String> palavras;
 
@@ -21,10 +21,5 @@ public class Requisicao implements Evento {
         demaisEmLista.add(0, palavra);
 
         palavras = Collections.unmodifiableList(demaisEmLista);
-    }
-
-    @Override
-    public String conteudo() {
-        return palavras.stream().collect(Collectors.joining(","));
     }
 }

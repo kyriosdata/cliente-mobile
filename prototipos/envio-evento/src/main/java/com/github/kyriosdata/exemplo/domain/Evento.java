@@ -3,12 +3,14 @@ package com.github.kyriosdata.exemplo.domain;
 /**
  * Identifica conteúdo do evento a ser enviado.
  */
-public interface Evento {
+public interface Evento<T> {
 
     /**
      * Retorna o conteúdo (valor) relevante do evento a ser sinalizado.
      *
-     * @return Conteúdo a ser sinalizado pela ocorrência de um evento.
+     * @param objeto Objeto do qual o conteúdo correspondente será
+     *               sinalizado.
+     * @return Conteúdo a ser sinalizado.
      */
-    String conteudo();
+    String conteudo(T objeto);
 }
