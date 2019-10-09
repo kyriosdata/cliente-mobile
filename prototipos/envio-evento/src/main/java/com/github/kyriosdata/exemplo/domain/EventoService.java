@@ -6,5 +6,7 @@ package com.github.kyriosdata.exemplo.domain;
  */
 public class EventoService {
 
-    
+    public void envia(final Evento evento) {
+
+    }
 }
