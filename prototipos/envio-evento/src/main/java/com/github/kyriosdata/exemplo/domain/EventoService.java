@@ -5,4 +5,6 @@ package com.github.kyriosdata.exemplo.domain;
  * considerando disponibilidade de acesso ao destinatário ou não.
  */
 public class EventoService {
+
+    
 }
