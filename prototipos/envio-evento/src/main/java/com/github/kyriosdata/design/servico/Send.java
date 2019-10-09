@@ -1,4 +1,4 @@
-package com.github.kyriosdata.exemplo.domain;
+package com.github.kyriosdata.design.servico;
 
 public class Send implements EnvioStrategy {
     @Override

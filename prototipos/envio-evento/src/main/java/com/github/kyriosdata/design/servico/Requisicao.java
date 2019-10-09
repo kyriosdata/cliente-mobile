@@ -1,4 +1,4 @@
-package com.github.kyriosdata.exemplo.domain;
+package com.github.kyriosdata.design.servico;
 
 import java.util.*;
 import java.util.stream.Collectors;

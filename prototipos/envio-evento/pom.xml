@@ -71,7 +71,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.mainClass>
-            com.github.kyriosdata.exemplo.application.console.ProgramaCalendario
+            com.github.kyriosdata.design.application.console.ProgramaCalendario
         </project.mainClass>
 
         <tools.dir>${project.basedir}/tools</tools.dir>
@@ -558,11 +558,11 @@
                         <configuration>
                             <targetClasses>
                                 <param>
-                                    com.github.kyriosdata.exemplo.domain.Calendario
+                                    com.github.kyriosdata.design.servico.Calendario
                                 </param>
                             </targetClasses>
                             <targetTests>
-                                <param>com.github.kyriosdata.exemplo.*</param>
+                                <param>com.github.kyriosdata.design.*</param>
                             </targetTests>
                         </configuration>
                     </plugin>

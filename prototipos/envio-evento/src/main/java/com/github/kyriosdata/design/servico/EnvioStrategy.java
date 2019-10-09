@@ -1,4 +1,4 @@
-package com.github.kyriosdata.exemplo.domain;
+package com.github.kyriosdata.design.servico;
 
 /**
  * Envio de requisição. Objeto que implementa esta interface deve primeiro
