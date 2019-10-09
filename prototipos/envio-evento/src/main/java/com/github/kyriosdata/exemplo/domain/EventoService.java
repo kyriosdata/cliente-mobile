@@ -6,6 +6,12 @@ package com.github.kyriosdata.exemplo.domain;
  */
 public class EventoService {
 
+    @Networking(disponivel = "sim")
+    private EnvioStrategy sendRequest;
+
+    @Networking(disponivel = "não")
+    private EnvioStrategy storeAndForward;
+
     public String envia(final Evento evento) {
         return evento.conteudo();
     }
