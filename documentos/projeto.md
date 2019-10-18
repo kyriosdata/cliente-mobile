@@ -9,7 +9,7 @@ O _design_ está dividido em projeto arquitetural e projeto detalhado.
 #### Para analisar, ...
 
 - Usar [Axon](https://axoniq.io/) como estratégia para todo o _backend_.
-- Usar Spring Boot com RabbitMQ ou estratégia similar para sinalizar eventos? ([aqui](https://reflectoring.io/event-messaging-with-spring-boot-and-rabbitmq/))
+- Usar Spring Boot com RabbitMQ ou estratégia similar para sinalizar eventos? ([aqui](https://reflectoring.io/event-messaging-with-spring-boot-and-rabbitmq/)). Veja como a integração pode ser realizada [aqui](https://spring.io/blog/2019/10/15/simple-event-driven-microservices-with-spring-cloud-stream).
 
 ## Projeto detalhado do Serviço de Busca (SA)
 
